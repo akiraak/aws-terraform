@@ -1,0 +1,9 @@
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/key-localfood-management
+
+Host localfood-prod
+    HostName ***.***.***.***
+    User ec2-user
+    IdentityFile ~/.ssh/key-localfood-app

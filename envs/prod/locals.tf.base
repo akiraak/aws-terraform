@@ -1,0 +1,15 @@
+locals {
+  service_name = "localfood"
+  env = "prod"
+  service_prefix = "${local.service_name}-${local.env}"
+  aws_account_ids = ["***********"]
+  region = "us-west-1"
+  az_1 = "us-west-1a"
+  az_2 = "us-west-1c"
+  acm_certificate_arn = "arn:aws:acm:us-west-1:********:certificate/********"
+  public_key_path_management = "../../key-localfood-management.pub"
+  public_key_path_app = "../../key-localfood-app.pub"
+  instance_type_management = "t3.nano"
+  instance_type_app = "t3.micro"
+  db_instance_type_app = "db.t3.micro"
+}
